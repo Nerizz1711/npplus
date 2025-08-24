@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: npplus-servicecare
+    env: php
+    buildCommand: composer install --no-dev --optimize-autoloader && npm install && npm run production
+    startCommand: php artisan serve --host=0.0.0.0 --port=$PORT
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: DB_CONNECTION
+        value: mysql
+      - key: DB_HOST
+        value: centerbeam.proxy.rlwy.net
+      - key: DB_PORT
+        value: 20910
+      - key: DB_DATABASE
+        value: railway
+      - key: DB_USERNAME
+        value: root
+      - key: DB_PASSWORD
+        value: TbLPFdBsfZpvaEAZuxKJIDFmdhSxxKky

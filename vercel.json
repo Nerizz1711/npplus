@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "public/index.php",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/public/index.php"
+    }
+  ],
+  "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "false",
+    "LOG_CHANNEL": "stderr",
+    "DB_CONNECTION": "mysql",
+    "DB_HOST": "centerbeam.proxy.rlwy.net",
+    "DB_PORT": "20910",
+    "DB_DATABASE": "railway",
+    "DB_USERNAME": "root",
+    "DB_PASSWORD": "TbLPFdBsfZpvaEAZuxKJIDFmdhSxxKky"
+  }
+}

@@ -1,0 +1,16 @@
+node_modules
+vendor
+storage
+bootstrap/cache
+.env
+.env.local
+.env.production
+.git
+.gitignore
+README.md
+composer.lock
+package-lock.json
+webpack.mix.js
+railway.json
+render.yaml
+.railway
