@@ -1,13 +1,11 @@
 node_modules
 vendor
-storage/logs
-storage/framework/cache
-storage/framework/sessions
-storage/framework/views
+storage
 bootstrap/cache
 .env
 .env.local
 .env.production
+.env.vercel
 .git
 .gitignore
 README.md
@@ -17,4 +15,4 @@ webpack.mix.js
 railway.json
 render.yaml
 .railway
-.env.vercel
+.github
